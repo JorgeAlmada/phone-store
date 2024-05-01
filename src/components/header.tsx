@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { FaBeer, FaShoppingCart, FaUserAlt } from "react-icons/fa";
+import { ShoppingCart } from "@phosphor-icons/react/dist/ssr/ShoppingCart";
+import { User } from "@phosphor-icons/react/dist/ssr/User";
 
 function HeaderComponent() {
 
@@ -18,8 +19,8 @@ function HeaderComponent() {
             {headerElems.map((elem, index) => <p className="px-2 text-white my-auto hover:text-gray hover:font-bold cursor-pointer" key={elem + index}>{elem}</p>)}
         </div>
         <div className="flex h-100">
-            <FaShoppingCart color="white" size={"1.5em"} className="mx-2 cursor-pointer hover:scale-105"/>
-            <FaUserAlt color="white" size={"1.5em"} className="mx-2 cursor-pointer hover:scale-105"/>
+            <ShoppingCart color="white" size={"1.5em"} className="mx-2 cursor-pointer hover:scale-105" />
+            <User color="white" size={"1.5em"} className="mx-2 cursor-pointer hover:scale-105"/>
         </div>
     </header> );
 }
